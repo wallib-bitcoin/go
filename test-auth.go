@@ -13,9 +13,9 @@ func main() {
 	method := "POST"
 
 	payload := strings.NewReader(`{
-    "email": "third-email",
-    "password": "third-password"
-}`)
+          "email": "third-email",
+          "password": "third-password"
+        }`)
 
 	client := &http.Client{}
 	req, err := http.NewRequest(method, url, payload)
